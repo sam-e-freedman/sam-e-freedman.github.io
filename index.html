@@ -3,137 +3,428 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sam Freedman | Geospatial Portfolio</title>
+  <title>Sam Freedman | Forest Data Science, GIS &amp; Remote Sensing</title>
+  <meta name="description" content="Sam Freedman — forest data scientist working across remote sensing, GIS, forest policy, forest modeling, and ecological design." />
+  <meta property="og:title" content="Sam Freedman | Forest Data Science, GIS &amp; Remote Sensing" />
+  <meta property="og:description" content="Remote sensing, forest carbon, forest policy, and landscape design." />
+  <meta property="og:image" content="https://sam-e-freedman.github.io/images/thesis/dixie-veg-2024.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header class="topbar">
-  <a class="name" href="#">Sam Freedman</a>
-
-  <nav class="links">
-    <a href="mailto:sfreedman@sfsu.edu">Email</a>
-    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/sam-e-freedman" target="_blank">GitHub</a>
-    <a href="files/Resume_Freedman_short.pdf" target="_blank">CV</a>
+<header class="topbar" id="top">
+  <a class="name" href="#top">Sam Freedman</a>
+  <nav class="links" aria-label="Sections">
+    <a href="#thesis">Thesis</a>
+    <a href="#policy">Policy</a>
+    <a href="#forestry">Forestry</a>
+    <a href="#design">Design</a>
+    <a href="#photography">Photography</a>
+    <a class="cv" href="Resume_Freedman_short.pdf" target="_blank" rel="noopener">CV</a>
   </nav>
 </header>
 
 <main>
 
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <p class="kicker">Research / Remote Sensing / Forest Ecology</p>
+  <div class="mosaic" aria-hidden="true">
+    <img class="p1" src="images/thesis/pred-tpi.jpg" alt="" />
+    <img class="p2" src="images/thesis/pred-rdnbr.jpg" alt="" />
+    <img class="p3" src="images/thesis/pred-slope.jpg" alt="" />
+    <img class="p4" src="images/thesis/czu-ndvi.jpg" alt="" />
+    <img class="p5" src="images/thesis/pred-solar.jpg" alt="" />
+    <img class="p6" src="images/thesis/pred-rdnbr-class.jpg" alt="" />
+    <img class="fp" src="images/design/deerfield-floodplain.jpg" alt="" />
+    <img class="dc" src="images/hero/d24-center.jpg" alt="" />
+    <img class="de" src="images/hero/d24-east.jpg" alt="" />
+    <img class="pe" src="images/hero/dpre-east.jpg" alt="" />
+    <img class="ps" src="images/hero/dpre-south.jpg" alt="" />
+    <img class="pn" src="images/hero/dpre-north.jpg" alt="" />
+    <img class="c20 white" src="images/thesis/czu-carbon-2020.jpg" alt="" />
+    <img class="c25 white" src="images/thesis/czu-carbon-2025.jpg" alt="" />
+    <img class="dw" src="images/hero/d24-west.jpg" alt="" />
+    <img class="df" src="images/design/deerfield-forests.jpg" alt="" />
+  </div>
 
-  <h1>
-    Modeling Post-Wildfire Carbon Recovery<br>
-    Using LiDAR, Remote Sensing,<br>
-    and Machine Learning.
-  </h1>
-
-  <p class="intro">
-    I am a geospatial scientist working at the intersection of forest ecology,
-    remote sensing, GIS, and environmental data science.
-  </p>
+  <div class="hero-text">
+    <p class="kicker">Forest data science · GIS · Remote sensing</p>
+    <h1>Mapping how forests burn, recover, and store carbon.</h1>
+    <p class="intro">
+      I'm Sam Freedman, a forest data scientist in the Bay Area. I use lidar,
+      satellite imagery, and spatial modeling to answer practical questions about
+      wildfire, forest carbon, and land management, then turn the results into
+      maps and stories that policymakers and communities can use.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="#thesis">See the thesis work</a>
+      <a class="btn ghost" href="#about">About me</a>
+    </div>
+  </div>
+  <p class="hero-caption">Dixie Fire &amp; CZU Lightning Complex vegetation, carbon, and terrain maps · Deerfield River floodplain</p>
 </section>
 
-<section class="image-panel">
-  <div class="image-placeholder">
-    Add thesis map / LiDAR image here
+<!-- ============ ABOUT + SPOTLIGHT ============ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div>
+      <p class="kicker dark">About</p>
+      <h2>Forester, analyst, designer.</h2>
+    </div>
+    <div class="about-body">
+      <p>
+        My path runs from landscape design through forest management to geospatial
+        data science. I hold three master's degrees: an M.S. in Geographic Information
+        Science (San Francisco State), a Master of Forestry (Oregon State), and an
+        M.S. in Ecological Design (Conway School). I spent nearly five years as a forest
+        policy analyst for public forestlands in southwest Oregon.
+      </p>
+      <p>
+        Today I work at the intersection of remote sensing, forest carbon, and wildfire
+        resilience, using Python, R, and ArcGIS Pro. I've also taught climate science,
+        forest biology, and environmental data analysis to university students.
+        I speak Portuguese fluently and Spanish proficiently.
+      </p>
+      <ul class="facts">
+        <li><span>Based in</span>Berkeley, CA</li>
+        <li><span>Focus</span>Forest carbon · Wildfire · Remote sensing</li>
+        <li><span>Tools</span>Python · R · ArcGIS Pro · FVS · ENVI · SNAP</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="spotlight">
+    <a class="spot" href="#thesis">
+      <img src="images/thesis/dixie-veg-2024.jpg" alt="Dixie Fire vegetation map, 2024" loading="lazy" />
+      <span class="spot-label">01 · M.S. GIS thesis</span>
+      <span class="spot-title">Post-fire carbon recovery in California forests</span>
+    </a>
+    <a class="spot" href="#policy">
+      <img src="images/policy/storymap-dry-forests-crop.jpg" alt="Dry mixed-conifer forest in southwest Oregon" loading="lazy" />
+      <span class="spot-label">02 · Forest Bridges</span>
+      <span class="spot-title">Policy writing &amp; StoryMaps</span>
+    </a>
+    <a class="spot" href="#forestry">
+      <img src="images/forestry/alder-trail.jpg" alt="Red alder forest trail" loading="lazy" />
+      <span class="spot-label">03 · Oregon State</span>
+      <span class="spot-title">Forest &amp; economic modeling</span>
+    </a>
+    <a class="spot" href="#design">
+      <img src="images/design/rockmeadow-arrival.jpg" alt="Rock Meadow proposed arrival rendering" loading="lazy" />
+      <span class="spot-label">04 · Conway School</span>
+      <span class="spot-title">Landscape planning &amp; design</span>
+    </a>
   </div>
 </section>
 
-<section class="thesis">
-  <div class="section-number">01</div>
+<!-- ============ THESIS ============ -->
+<section class="project" id="thesis">
+  <header class="project-head">
+    <p class="num">01</p>
+    <div>
+      <p class="kicker dark">M.S. Geographic Information Science · San Francisco State · 2024–2026</p>
+      <h2>Post-fire ecosystem recovery &amp; forest carbon mapping</h2>
+      <p class="lede">
+        My thesis compares two very different California wildfires: the 2021 Dixie Fire
+        in Sierra Nevada mixed conifer and the 2020 CZU Lightning Complex in the coastal
+        redwoods. I quantify how much carbon each forest lost, how it is recovering, and
+        which landscape factors drive burn severity.
+      </p>
+      <ul class="chips">
+        <li>Python</li><li>R</li><li>ArcGIS Pro</li><li>Remote sensing</li><li>Machine learning</li>
+        <li>NASA GEDI lidar</li><li>Sentinel-2 / Landsat</li><li>Random Forest</li>
+      </ul>
+    </div>
+  </header>
 
-  <div>
-    <p class="kicker">Featured Thesis</p>
-    <h2>Post-fire carbon dynamics in California forests</h2>
+  <figure class="wide strip">
+    <img class="zoom" src="images/thesis/pred-rdnbr.jpg" alt="Imported RdNBR burn severity" loading="lazy" />
+    <img class="zoom" src="images/thesis/pred-rdnbr-class.jpg" alt="RdNBR reclassified into severity classes" loading="lazy" />
+    <img class="zoom" src="images/thesis/pred-tpi.jpg" alt="Topographic position index" loading="lazy" />
+    <img class="zoom" src="images/thesis/pred-slope.jpg" alt="Slope" loading="lazy" />
+    <img class="zoom" src="images/thesis/pred-solar.jpg" alt="Solar radiation" loading="lazy" />
+    <figcaption>Landscape predictors for one watershed inside the Dixie Fire: burn severity (RdNBR), topographic position, slope, and solar radiation.</figcaption>
+  </figure>
 
-    <p>
-      My M.S. thesis in Geographic Information Science investigates post-fire
-      ecosystem recovery and carbon dynamics across the CZU Lightning Complex
-      and Dixie Fire. The project integrates airborne LiDAR, GEDI, satellite
-      imagery, burn severity data, vegetation layers, and machine learning models
-      to understand how forest carbon changes after wildfire.
-    </p>
+  <div class="split">
+    <figure>
+      <div class="pair">
+        <img class="zoom" src="images/thesis/dixie-veg-prefire.jpg" alt="Dixie Fire vegetation before the fire" loading="lazy" />
+        <img class="zoom" src="images/thesis/dixie-veg-2024.jpg" alt="Dixie Fire vegetation in 2024" loading="lazy" />
+      </div>
+      <figcaption>Vegetation before the Dixie Fire and in 2024. Red fir and mixed conifer give way to montane chaparral, meadow, and young regrowth.</figcaption>
+    </figure>
+    <div class="text">
+      <h3>Mapping, modeling &amp; machine learning</h3>
+      <p>
+        I convert NASA GEDI lidar measurements of canopy structure into aboveground biomass
+        and carbon (Mg C/ha). Then I use Random Forest models to predict burn severity and
+        produce wall-to-wall carbon maps from terrain, vegetation, and access predictors.
+        Spatial cross-validation keeps the models honest about spatial autocorrelation.
+      </p>
+      <p>
+        Imagery comes straight from Microsoft Planetary Computer's STAC catalog. Python
+        scripts build yearly cloud-filtered Sentinel-2 and Landsat composites and compute
+        indices such as NDVI and NDMI.
+      </p>
+    </div>
+  </div>
+
+  <div class="split reverse">
+    <figure>
+      <div class="pair">
+        <img class="zoom" src="images/thesis/czu-carbon-2020.jpg" alt="CZU pre-fire aboveground carbon, 2020" loading="lazy" />
+        <img class="zoom" src="images/thesis/czu-carbon-2025.jpg" alt="CZU post-fire aboveground carbon, 2025" loading="lazy" />
+      </div>
+      <img class="zoom chart" src="images/thesis/czu-carbon-bars.jpg" alt="Total ecosystem carbon through time in the CZU fire, 2020–2025" loading="lazy" />
+      <figcaption>Aboveground carbon across the CZU footprint before the fire (2020) and after (2025), derived from GEDI lidar, with total carbon tracked year by year.</figcaption>
+    </figure>
+    <div class="text">
+      <h3>What the two fires show</h3>
+      <p>
+        In the CZU redwoods, burn severity <em>dropped</em> in stands with the most
+        pre-fire carbon. Denser, moister redwood forest seems to have buffered the fire.
+        In the Dixie Fire, carbon density had little effect on severity.
+      </p>
+      <p>
+        I'm now comparing recovery trajectories by years since fire, burn-severity
+        class, and terrain, with an eye to where post-fire recovery could support
+        carbon and biodiversity credits.
+      </p>
+      <img class="zoom chart" src="images/thesis/severity-vs-carbon.jpg" alt="Mean burn severity across the pre-fire carbon gradient for CZU vs Dixie" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="gallery three">
+    <figure><img class="zoom" src="images/thesis/code-composites.jpg" alt="Python code building yearly Sentinel-2 and Landsat composites" loading="lazy" /><figcaption>Python: building yearly optical composites</figcaption></figure>
+    <figure><img class="zoom" src="images/thesis/heatmap-rdnbr.jpg" alt="Heatmap of mean RdNBR by carbon and TPI bins" loading="lazy" /><figcaption>R / ggplot2: burn severity by carbon × topographic position</figcaption></figure>
+    <figure><img class="zoom" src="images/thesis/dixie-carbon-by-type.jpg" alt="Dixie Fire net carbon recovery by forest type" loading="lazy" /><figcaption>Net carbon change by forest type, Dixie Fire</figcaption></figure>
   </div>
 </section>
 
-<section class="work">
-
-  <h2>Selected Work</h2>
-
-  <article class="project">
-    <div class="project-number">02</div>
-    <div class="project-content">
-      <h3>CZU Lightning Complex</h3>
-      <p>
-        Mapped carbon loss and recovery in coastal redwood and mixed evergreen
-        forests using LiDAR, satellite imagery, burn severity data, and GIS.
+<!-- ============ FOREST BRIDGES ============ -->
+<section class="project alt" id="policy">
+  <header class="project-head">
+    <p class="num">02</p>
+    <div>
+      <p class="kicker dark">Forest Policy Analyst · Forest Bridges · 2020–2025</p>
+      <h2>Policy writing &amp; science communication</h2>
+      <p class="lede">
+        At Forest Bridges I did the spatial analysis behind a restoration vision for the
+        BLM's O&amp;C forestlands in Oregon, more than 2.5 million acres. I
+        translated it into StoryMaps, briefs, and policy writing for policymakers, agencies,
+        Tribes, and conservation partners. I also worked on prescribed-fire advocacy
+        with the Oregon Prescribed Fire Council.
       </p>
-      <a href="#">View project →</a>
+      <ul class="chips">
+        <li>ArcGIS StoryMaps</li><li>Spatial analysis</li><li>Policy writing</li><li>Stakeholder coordination</li><li>Prescribed fire</li>
+      </ul>
     </div>
-  </article>
+  </header>
 
-  <article class="project">
-    <div class="project-number">03</div>
-    <div class="project-content">
-      <h3>Dixie Fire</h3>
-      <p>
-        Analyzed burn severity, vegetation structure, and post-fire carbon
-        dynamics across a large mixed-conifer landscape in northern California.
-      </p>
-      <a href="#">View project →</a>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="project-number">04</div>
-    <div class="project-content">
-      <h3>Forest Bridges</h3>
-      <p>
-        Developed spatial analysis, public-facing StoryMaps, and forest policy
-        communication tools supporting wildfire resilience and ecological forestry.
-      </p>
-      <a href="#">View project →</a>
-    </div>
-  </article>
-
-  <article class="project">
-    <div class="project-number">05</div>
-    <div class="project-content">
-      <h3>Ecological Design</h3>
-      <p>
-        Created GIS-informed planning and design projects focused on watershed
-        health, habitat restoration, climate resilience, and landscape systems.
-      </p>
-      <a href="#">View project →</a>
-    </div>
-  </article>
-
+  <div class="storymaps">
+    <a class="storymap" href="https://storymaps.arcgis.com/stories/ac1b6c9a47164746878c7db98fb68e00" target="_blank" rel="noopener">
+      <img src="images/policy/storymap-dry-forests.jpg" alt="StoryMap: Introduction: Dry Mixed-Conifer Forests of Southwest Oregon" loading="lazy" />
+      <span class="sm-meta">StoryMap · 2022</span>
+      <span class="sm-title">Introduction: Dry Mixed-Conifer Forests of Southwest Oregon</span>
+      <span class="sm-cta">Open StoryMap ↗</span>
+    </a>
+    <a class="storymap" href="https://storymaps.arcgis.com/stories/2ccab1a1a2c845d589a13a4efe308f62" target="_blank" rel="noopener">
+      <img src="images/policy/storymap-strategy.jpg" alt="StoryMap: Forest Bridges Dry Forest Management Strategy" loading="lazy" />
+      <span class="sm-meta">Storyboard · 2023</span>
+      <span class="sm-title">Forest Bridges Dry Forest Management Strategy for the O&amp;C lands</span>
+      <span class="sm-cta">Open StoryMap ↗</span>
+    </a>
+  </div>
 </section>
 
-<section class="about">
-  <div class="section-number">06</div>
+<!-- ============ OSU ============ -->
+<section class="project" id="forestry">
+  <header class="project-head">
+    <p class="num">03</p>
+    <div>
+      <p class="kicker dark">Master of Forestry · Oregon State University · 2019–2021</p>
+      <h2>Forest growth, economics &amp; silviculture planning</h2>
+      <p class="lede">
+        My forestry training at Oregon State focused on sustainable forest management.
+        My graduate project combined stand-level growth modeling with economic analysis
+        to compare management pathways, and I wrote silviculture and agroforestry plans
+        that balance timber, habitat, and fire resilience.
+      </p>
+      <ul class="chips">
+        <li>Forest Vegetation Simulator (FVS)</li><li>Economic modeling</li><li>Silviculture prescriptions</li><li>Agroforestry planning</li><li>Forest inventory</li>
+      </ul>
+    </div>
+  </header>
 
-  <div>
-    <h2>About</h2>
-    <p>
-      I am completing an M.S. in Geographic Information Science at San Francisco
-      State University, with prior graduate training in sustainable forest
-      management and ecological design. My work uses spatial analysis, remote
-      sensing, and environmental modeling to support conservation, climate
-      adaptation, and natural resource management.
-    </p>
+  <div class="split">
+    <figure>
+      <img class="zoom" src="images/forestry/alder-trail.jpg" alt="Red alder and sword fern along a forest trail in Oregon" loading="lazy" />
+    </figure>
+    <div class="text">
+      <h3>Modeling stands through time</h3>
+      <p>
+        <!-- TODO(Sam): replace with your OSU project title, site, and key findings. -->
+        I used the Forest Vegetation Simulator to project stand growth under alternative
+        silvicultural regimes and paired those projections with economic analysis to
+        compare management outcomes over time.
+      </p>
+      <p>
+        I also taught dendrology, forest biology, and forests &amp; wildfire as a teaching
+        assistant at Oregon State.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONWAY ============ -->
+<section class="project alt" id="design">
+  <header class="project-head">
+    <p class="num">04</p>
+    <div>
+      <p class="kicker dark">M.S. Ecological Design · Conway School · 2017–2019</p>
+      <h2>Landscape planning &amp; ecological design</h2>
+      <p class="lede">
+        At the Conway School I worked with real clients, including towns, regional planners,
+        and homeowners, on GIS-based plans for climate resilience, habitat, and stormwater,
+        from watershed scale down to planting plans.
+      </p>
+      <ul class="chips">
+        <li>GIS site analysis</li><li>Conservation planning</li><li>Green infrastructure</li><li>Hand rendering</li><li>Planting design</li>
+      </ul>
+    </div>
+  </header>
+
+  <article class="case">
+    <div class="case-text">
+      <h3>Rock Meadow: a conservation master plan</h3>
+      <p class="where">Belmont Conservation Commission · Belmont, MA</p>
+      <p>
+        An eco-historical walking tour, an exotic-species management plan, and design
+        alternatives for a meadow and woodland conservation area. A follow-up commission from
+        the Town of Belmont redesigned the flooding parking lot with bioswales and
+        pollinator planting.
+      </p>
+    </div>
+    <div class="gallery two">
+      <figure><img class="zoom" src="images/design/rockmeadow-arrival.jpg" alt="Proposed arrival experience rendering" loading="lazy" /><figcaption>Proposed arrival experience</figcaption></figure>
+      <figure><img class="zoom" src="images/design/rockmeadow-plans.jpg" alt="Two design alternatives: History & Habitat and In the Park" loading="lazy" /><figcaption>Design alternatives</figcaption></figure>
+      <figure class="span2"><img class="zoom" src="images/design/rockmeadow-transect.jpg" alt="Site transect from Beaver Brook to East Woodland" loading="lazy" /><figcaption>Section A–A′, Beaver Brook to East Woodland</figcaption></figure>
+      <figure><img class="zoom" src="images/design/rockmeadow-sections.jpg" alt="Observation deck sections" loading="lazy" /><figcaption>Observation deck sections</figcaption></figure>
+      <figure><img class="zoom" src="images/design/rockmeadow-planting.jpg" alt="Bioswale planting plans" loading="lazy" /><figcaption>Green infrastructure planting plan</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="case-text">
+      <h3>Ecological resilience in Deerfield, MA</h3>
+      <p class="where">Franklin Regional Council of Governments</p>
+      <p>
+        A resilience assessment at the forest, river, and town scales. It mapped floodplain
+        forests and found gaps in riparian buffers. It then combined community priorities
+        with Mass Audubon's MAPPR model to identify three critical restoration areas along
+        the Deerfield River.
+      </p>
+    </div>
+    <div class="gallery three">
+      <figure><img class="zoom" src="images/design/deerfield-floodplain.jpg" alt="100-year floodplains in Deerfield" loading="lazy" /><figcaption>100-year floodplains</figcaption></figure>
+      <figure><img class="zoom" src="images/design/deerfield-forests.jpg" alt="Six floodplain forests along the Deerfield River" loading="lazy" /><figcaption>Floodplain forests</figcaption></figure>
+      <figure><img class="zoom" src="images/design/deerfield-priorities.jpg" alt="Overlapping conservation priorities map" loading="lazy" /><figcaption>Overlapping conservation priorities</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="case">
+    <div class="case-text">
+      <h3>The Kearns residence</h3>
+      <p class="where">Residential landscape design · Wendell, MA</p>
+      <p>
+        A residential plan based on regional habitat mapping, drainage and slope analysis,
+        and a solar envelope study. It produced three alternatives: "A Mast Year,"
+        "Pond &amp; Pollinators," and "Open &amp; Closed."
+      </p>
+    </div>
+    <div class="gallery two">
+      <figure class="span2"><img class="zoom" src="images/design/kearns-section.jpg" alt="Hand-rendered site section" loading="lazy" /><figcaption>Site section</figcaption></figure>
+      <figure><img class="zoom" src="images/design/kearns-solar.jpg" alt="Solar envelope analysis" loading="lazy" /><figcaption>Solar envelope, March–September</figcaption></figure>
+      <figure><img class="zoom" src="images/design/kearns-alternatives.jpg" alt="Three design alternatives" loading="lazy" /><figcaption>Three alternatives</figcaption></figure>
+    </div>
+  </article>
+</section>
+
+<!-- ============ PHOTOGRAPHY ============ -->
+<section class="photography" id="photography">
+  <header class="project-head light">
+    <p class="num">05</p>
+    <div>
+      <p class="kicker">Digital photography</p>
+      <h2>Landscapes in the field</h2>
+    </div>
+  </header>
+  <div class="photo-grid">
+    <img class="zoom wide2" src="images/photo/braided-river.jpg" alt="Braided glacial river below snowy peaks" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-10.jpg" alt="Sunlight through giant sequoias" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-04.jpg" alt="Alpine valley in autumn" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-16.jpg" alt="Mountain lake reflection" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-11.jpg" alt="Granite dome above conifers" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-01.jpg" alt="Black and white rock spires in mist" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-12.jpg" alt="Golden aspen canopy" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-05.jpg" alt="Coastal trail at sunset" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-09.jpg" alt="Subalpine granite and pines" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-13.jpg" alt="Sea arch framing the beach" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-06.jpg" alt="Rainbow over a volcanic cinder cone" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-08.jpg" alt="Twilight lake below peaks" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-15.jpg" alt="Glacial river through forest" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-07.jpg" alt="Cliff edge in fog" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-14.jpg" alt="Black and white leaves" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-02.jpg" alt="Light beam in a misty canyon" loading="lazy" />
+    <img class="zoom" src="images/photo/photo-03.jpg" alt="Black and white rocky riverbed" loading="lazy" />
+    <img class="zoom pano" src="images/photo/photo-18.jpg" alt="Panorama of hazy ridgelines" loading="lazy" />
   </div>
 </section>
 
 </main>
 
-<footer>
-  <p>© 2026 Sam Freedman</p>
+<footer class="contact" id="contact">
+  <div>
+    <h2>Let's talk.</h2>
+    <p>I'm open to roles and collaborations in forest carbon, remote sensing, and natural resource analysis.</p>
+  </div>
+  <nav class="contact-links">
+    <a href="mailto:sfreedman@sfsu.edu">sfreedman@sfsu.edu</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/sam-e-freedman" target="_blank" rel="noopener">GitHub</a>
+    <a href="Resume_Freedman_short.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+  </nav>
+  <p class="copy">© 2026 Sam Freedman</p>
 </footer>
+
+<dialog class="lightbox" id="lightbox">
+  <button class="close" aria-label="Close">×</button>
+  <img alt="" />
+  <p class="lb-cap"></p>
+</dialog>
+
+<script>
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  const lbCap = lb.querySelector('.lb-cap');
+  document.querySelectorAll('img.zoom').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCap.textContent = img.alt;
+      lb.showModal();
+    });
+  });
+  lb.addEventListener('click', () => lb.close());
+  const bar = document.querySelector('.topbar');
+  const onScroll = () => bar.classList.toggle('solid', window.scrollY > window.innerHeight * 0.6);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+</script>
 
 </body>
 </html>
